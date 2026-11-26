@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tree dan Graph dalam Jaringan: Pengantar dengan Ilustrasi 3D</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; color: #1E293B; background: #F8FAFC; }
+    .slide-container {
+      width: 1280px;
+      height: 720px;
+      margin: 0 auto;
+      overflow: hidden;
+      box-sizing: border-box;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SLIDE 1: Pembuka -->
+  <div class="slide-container" id="slide1" style="width:1280px;height:720px;margin:0;padding:48px 64px;box-sizing:border-box;overflow:hidden;background:#0F172A;display:flex;align-items:center;gap:48px;">
+    <div style="flex:1 1 55%;display:flex;flex-direction:column;justify-content:center;">
+      <p contenteditable="true" style="font-size:16px;font-weight:700;color:#38BDF8;letter-spacing:0.06em;margin:0 0 16px 0;">
+        PENGANTAR DENGAN ILUSTRASI 3D
+      </p>
+      <h1 contenteditable="true" style="font-size:52px;font-weight:800;color:#F8FAFC;line-height:1.15;margin:0 0 24px 0;">
+        Tree dan Graph dalam Jaringan
+      </h1>
+      <p contenteditable="true" style="font-size:21px;font-weight:400;color:#CBD5E1;line-height:1.45;margin:0 0 32px 0;">
+        Memahami cara kerja struktur data hierarkis dan hubungan titik pada sistem jaringan komputer modern.
+      </p>
+      <div style="width:72px;height:6px;background:#F97316;border-radius:3px;"></div>
+    </div>
+    <div style="flex:1 1 45%;height:540px;background:#1E293B;border-radius:24px;padding:20px;display:flex;align-items:center;justify-content:center;">
+      <img src="https://images.stockcake.com/public/9/c/5/9c5f1e3c-e9e5-43bf-8afa-698cea9ed839_medium/innovation-network-hub-stockcake.jpg" alt="Ilustrasi 3D pohon bercahaya dan titik-titik jaringan terhubung" style="width:100%;height:100%;object-fit:contain;border-radius:16px;">
+    </div>
+  </div>
+
+  <!-- SLIDE 2: Apa itu Tree? -->
+  <div class="slide-container" id="slide2" style="width:1280px;height:720px;margin:0;padding:48px 64px;box-sizing:border-box;overflow:hidden;background:#F8FAFC;display:flex;flex-direction:column;">
+    <h2 contenteditable="true" style="font-size:36px;font-weight:800;color:#0F172A;margin:0 0 28px 0;line-height:1.2;">
+      Apa itu Tree?
+    </h2>
+    <div style="flex-grow:1;display:flex;align-items:center;gap:48px;">
+      <div style="flex:1 1 46%;height:500px;background:#FFFFFF;border-radius:24px;padding:24px;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 32px rgba(15,23,42,0.06);">
+        <img src="https://images.stockcake.com/public/4/e/a/4eafffcf-e8a2-4651-a19e-56ca22a49207_large/glowing-binary-tree-stockcake.jpg" alt="Ilustrasi 3D struktur pohon bercabang dari satu titik pusat" style="width:100%;height:100%;object-fit:contain;border-radius:16px;">
+      </div>
+      <div style="flex:1 1 54%;display:flex;flex-direction:column;gap:20px;">
+        <p contenteditable="true" style="font-size:20px;font-weight:500;color:#1E293B;line-height:1.45;margin:0;">
+          Tree adalah struktur data bertingkat yang membagi koneksi dari satu titik pusat menuju titik cabang secara teratur tanpa jalur melingkar.
+        </p>
+        <div style="display:flex;gap:16px;align-items:center;">
+          <div style="flex:1 1 0;background:#EFF6FF;border-radius:20px;padding:20px;">
+            <i class="fa-solid fa-seedling" style="font-size:24px;color:#0284C7;margin:0 0 10px 0;"></i>
+            <h3 contenteditable="true" style="font-size:19px;font-weight:700;color:#0F172A;margin:0 0 6px 0;">Akar (Root)</h3>
+            <p contenteditable="true" style="font-size:18px;color:#334155;margin:0;">Titik utama awal pembagian jalur.</p>
+          </div>
+          <div style="flex:1 1 0;background:#FFF7ED;border-radius:20px;padding:20px;">
+            <i class="fa-solid fa-code-branch" style="font-size:24px;color:#F97316;margin:0 0 10px 0;"></i>
+            <h3 contenteditable="true" style="font-size:19px;font-weight:700;color:#0F172A;margin:0 0 6px 0;">Cabang & Daun</h3>
+            <p contenteditable="true" style="font-size:18px;color:#334155;margin:0;">Titik lanjutan hingga ujung akhir.</p>
+          </div>
+        </div>
+        <div style="background:#FFFFFF;border-radius:16px;padding:18px 22px;box-shadow:0 6px 20px rgba(15,23,42,0.04);">
+          <p contenteditable="true" style="font-size:18px;color:#334155;margin:0;">
+            <b>Penerapan nyata:</b> Susunan folder direktori komputer dan pembagian jaringan lokal bertingkat.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 3: Apa itu Graph? -->
+  <div class="slide-container" id="slide3" style="width:1280px;height:720px;margin:0;padding:48px 64px;box-sizing:border-box;overflow:hidden;background:#F8FAFC;display:flex;flex-direction:column;">
+    <h2 contenteditable="true" style="font-size:36px;font-weight:800;color:#0F172A;margin:0 0 28px 0;line-height:1.2;">
+      Apa itu Graph?
+    </h2>
+    <div style="flex-grow:1;display:flex;align-items:center;gap:48px;">
+      <div style="flex:1 1 48%;height:500px;background:#FFFFFF;border-radius:24px;padding:24px;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 32px rgba(15,23,42,0.06);">
+        <img src="https://images.stockcake.com/public/9/c/5/9c5f1e3c-e9e5-43bf-8afa-698cea9ed839_large/innovation-network-hub-stockcake.jpg" alt="Ilustrasi 3D titik-titik yang saling terhubung dengan garis" style="width:100%;height:100%;object-fit:contain;border-radius:16px;">
+      </div>
+      <div style="flex:1 1 52%;display:flex;flex-direction:column;gap:20px;">
+        <p contenteditable="true" style="font-size:20px;font-weight:500;color:#1E293B;line-height:1.45;margin:0;">
+          Graph adalah kumpulan titik data (node) yang saling terhubung melalui garis penghubung (edge) secara bebas tanpa batasan tingkatan.
+        </p>
+        <div style="display:flex;gap:16px;align-items:center;">
+          <div style="flex:1 1 0;background:#EFF6FF;border-radius:20px;padding:20px;">
+            <i class="fa-solid fa-circle-dot" style="font-size:24px;color:#0284C7;margin:0 0 10px 0;"></i>
+            <h3 contenteditable="true" style="font-size:19px;font-weight:700;color:#0F172A;margin:0 0 6px 0;">Titik (Vertex)</h3>
+            <p contenteditable="true" style="font-size:18px;color:#334155;margin:0;">Perangkat atau lokasi penyimpan data.</p>
+          </div>
+          <div style="flex:1 1 0;background:#FFF7ED;border-radius:20px;padding:20px;">
+            <i class="fa-solid fa-link" style="font-size:24px;color:#F97316;margin:0 0 10px 0;"></i>
+            <h3 contenteditable="true" style="font-size:19px;font-weight:700;color:#0F172A;margin:0 0 6px 0;">Garis (Edge)</h3>
+            <p contenteditable="true" style="font-size:18px;color:#334155;margin:0;">Jalur komunikasi langsung antartitik.</p>
+          </div>
+        </div>
+        <div style="background:#FFFFFF;border-radius:16px;padding:18px 22px;box-shadow:0 6px 20px rgba(15,23,42,0.04);">
+          <p contenteditable="true" style="font-size:18px;color:#334155;margin:0;">
+            <b>Penerapan nyata:</b> Peta navigasi jalan raya, hubungan antar-akun media sosial, dan jalur router internet.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 4: Perbedaan Tree dan Graph -->
+  <div class="slide-container" id="slide4" style="width:1280px;height:720px;margin:0;padding:48px 64px;box-sizing:border-box;overflow:hidden;background:#F8FAFC;display:flex;flex-direction:column;">
+    <h2 contenteditable="true" style="font-size:36px;font-weight:800;color:#0F172A;margin:0 0 28px 0;line-height:1.2;">
+      Perbedaan Tree dan Graph
+    </h2>
+    <div style="flex-grow:1;display:flex;align-items:center;gap:36px;">
+      <!-- Kolom Tree -->
+      <div style="flex:1 1 0;background:#FFFFFF;border-radius:24px;padding:32px;box-shadow:0 12px 32px rgba(2,132,199,0.08);display:flex;flex-direction:column;gap:18px;">
+        <div style="display:flex;align-items:center;gap:16px;">
+          <div style="width:52px;height:52px;border-radius:16px;background:#E0F2FE;display:flex;align-items:center;justify-content:center;">
+            <i class="fa-solid fa-tree" style="font-size:26px;color:#0284C7;"></i>
+          </div>
+          <h3 contenteditable="true" style="font-size:26px;font-weight:800;color:#0284C7;margin:0;">Struktur Tree</h3>
+        </div>
+        <div style="width:100%;height:125px;display:flex;align-items:center;justify-content:center;">
+          <svg width="240" height="120" viewBox="0 0 240 130">
+            <line x1="120" y1="24" x2="60" y2="68" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"></line>
+            <line x1="120" y1="24" x2="180" y2="68" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"></line>
+            <line x1="60" y1="68" x2="30" y2="112" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"></line>
+            <line x1="60" y1="68" x2="90" y2="112" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"></line>
+            <circle cx="120" cy="24" r="14" fill="#F97316"></circle>
+            <circle cx="60" cy="68" r="12" fill="#0284C7"></circle>
+            <circle cx="180" cy="68" r="12" fill="#0284C7"></circle>
+            <circle cx="30" cy="112" r="10" fill="#38BDF8"></circle>
+            <circle cx="90" cy="112" r="10" fill="#38BDF8"></circle>
+          </svg>
+        </div>
+        <ul style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:10px;font-size:18px;color:#1E293B;">
+          <li contenteditable="true"><b>Titik Pusat:</b> Memiliki tepat satu akar utama di puncak.</li>
+          <li contenteditable="true"><b>Jalur Koneksi:</b> Hanya ada satu jalur tunggal menuju setiap titik.</li>
+          <li contenteditable="true"><b>Bentuk Aliran:</b> Tidak memiliki jalur memutar (siklus tertutup).</li>
+        </ul>
+      </div>
+
+      <!-- Kolom Graph -->
+      <div style="flex:1 1 0;background:#FFFFFF;border-radius:24px;padding:32px;box-shadow:0 12px 32px rgba(249,115,22,0.08);display:flex;flex-direction:column;gap:18px;">
+        <div style="display:flex;align-items:center;gap:16px;">
+          <div style="width:52px;height:52px;border-radius:16px;background:#FFEDD5;display:flex;align-items:center;justify-content:center;">
+            <i class="fa-solid fa-circle-nodes" style="font-size:26px;color:#F97316;"></i>
+          </div>
+          <h3 contenteditable="true" style="font-size:26px;font-weight:800;color:#F97316;margin:0;">Struktur Graph</h3>
+        </div>
+        <div style="width:100%;height:125px;display:flex;align-items:center;justify-content:center;">
+          <svg width="240" height="120" viewBox="0 0 240 130">
+            <line x1="60" y1="28" x2="180" y2="28" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"></line>
+            <line x1="60" y1="28" x2="40" y2="102" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"></line>
+            <line x1="60" y1="28" x2="180" y2="102" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"></line>
+            <line x1="180" y1="28" x2="180" y2="102" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"></line>
+            <line x1="40" y1="102" x2="180" y2="102" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"></line>
+            <circle cx="60" cy="28" r="13" fill="#F97316"></circle>
+            <circle cx="180" cy="28" r="13" fill="#0284C7"></circle>
+            <circle cx="40" cy="102" r="13" fill="#38BDF8"></circle>
+            <circle cx="180" cy="102" r="13" fill="#F97316"></circle>
+          </svg>
+        </div>
+        <ul style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:10px;font-size:18px;color:#1E293B;">
+          <li contenteditable="true"><b>Titik Pusat:</b> Tidak memiliki akar utama maupun tingkatan baku.</li>
+          <li contenteditable="true"><b>Jalur Koneksi:</b> Satu titik dapat terhubung ke banyak titik sekaligus.</li>
+          <li contenteditable="true"><b>Bentuk Aliran:</b> Dapat membentuk jalur memutar atau arah bolak-balik.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 5: Tree dan Graph dalam Jaringan Komputer -->
+  <div class="slide-container" id="slide5" style="width:1280px;height:720px;margin:0;padding:48px 64px;box-sizing:border-box;overflow:hidden;background:#F8FAFC;display:flex;flex-direction:column;">
+    <h2 contenteditable="true" style="font-size:36px;font-weight:800;color:#0F172A;margin:0 0 28px 0;line-height:1.2;">
+      Dalam Jaringan Komputer
+    </h2>
+    <div style="flex-grow:1;display:flex;align-items:center;gap:48px;">
+      <div style="flex:1 1 48%;height:500px;background:#FFFFFF;border-radius:24px;padding:24px;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 32px rgba(15,23,42,0.06);">
+        <img src="https://img.magnific.com/premium-psd/isometric-data-center-network-infrastructure-with-servers-database-computer-hardware-connected-by-glowing-cables-white-backdrop_1088041-97264.jpg?semt=ais_hybrid&w=740&q=80" alt="Ilustrasi 3D jaringan komputer terhubung dengan garis cahaya" style="width:100%;height:100%;object-fit:contain;border-radius:16px;">
+      </div>
+      <div style="flex:1 1 52%;display:flex;flex-direction:column;gap:24px;">
+        <div style="background:#FFFFFF;border-radius:20px;padding:28px;box-shadow:0 10px 25px rgba(15,23,42,0.05);">
+          <h3 contenteditable="true" style="font-size:22px;font-weight:700;color:#0284C7;margin:0 0 10px 0;">
+            <i class="fa-solid fa-network-wired" style="margin:0 10px 0 0;"></i>Jaringan Lokal (Topologi Tree)
+          </h3>
+          <p contenteditable="true" style="font-size:18px;color:#334155;line-height:1.45;margin:0;">
+            Server utama membagi koneksi ke switch lantai lalu ke setiap komputer ruangan secara teratur sehingga gangguan kabel mudah dilacak.
+          </p>
+        </div>
+        <div style="background:#FFFFFF;border-radius:20px;padding:28px;box-shadow:0 10px 25px rgba(15,23,42,0.05);">
+          <h3 contenteditable="true" style="font-size:22px;font-weight:700;color:#F97316;margin:0 0 10px 0;">
+            <i class="fa-solid fa-globe" style="margin:0 10px 0 0;"></i>Jaringan Internet Global (Topologi Graph)
+          </h3>
+          <p contenteditable="true" style="font-size:18px;color:#334155;line-height:1.45;margin:0;">
+            Jutaan router antarkota saling terhubung melalui banyak jalur cadangan agar pengiriman paket data tetap berjalan saat satu jalur putus.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 6: Mengapa Penting? -->
+  <div class="slide-container" id="slide6" style="width:1280px;height:720px;margin:0;padding:48px 64px;box-sizing:border-box;overflow:hidden;background:#F8FAFC;display:flex;flex-direction:column;">
+    <h2 contenteditable="true" style="font-size:36px;font-weight:800;color:#0F172A;margin:0 0 28px 0;line-height:1.2;">
+      Mengapa Penting?
+    </h2>
+    <div style="flex-grow:1;display:flex;align-items:center;gap:48px;">
+      <div style="flex:1 1 48%;height:500px;background:#FFFFFF;border-radius:24px;padding:24px;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 32px rgba(15,23,42,0.06);">
+        <img src="https://images.stockcake.com/public/9/6/c/96c54786-46b9-4d6b-b154-da5d429e0545_large/neural-network-glow-stockcake.jpg" alt="Ilustrasi 3D aliran data lancar melewati jalur jaringan" style="width:100%;height:100%;object-fit:contain;border-radius:16px;">
+      </div>
+      <div style="flex:1 1 52%;display:flex;flex-direction:column;gap:18px;">
+        <p contenteditable="true" style="font-size:20px;font-weight:600;color:#0F172A;line-height:1.4;margin:0 0 4px 0;">
+          Pemilihan struktur jaringan menentukan kecepatan, efisiensi, dan keandalan pengiriman informasi.
+        </p>
+        <div style="background:#EFF6FF;border-radius:18px;padding:20px 24px;display:flex;align-items:center;gap:18px;">
+          <i class="fa-solid fa-bolt" style="font-size:26px;color:#0284C7;"></i>
+          <p contenteditable="true" style="font-size:18px;color:#1E293B;margin:0;">
+            <b>Pencarian Data Terstruktur:</b> Susunan bertingkat mempercepat proses pelacakan lokasi file dan perangkat.
+          </p>
+        </div>
+        <div style="background:#FFF7ED;border-radius:18px;padding:20px 24px;display:flex;align-items:center;gap:18px;">
+          <i class="fa-solid fa-route" style="font-size:26px;color:#F97316;"></i>
+          <p contenteditable="true" style="font-size:18px;color:#1E293B;margin:0;">
+            <b>Penentuan Rute Tercepat:</b> Perhitungan bobot garis menemukan jalur kirim paling singkat antarpengguna.
+          </p>
+        </div>
+        <div style="background:#F0FDF4;border-radius:18px;padding:20px 24px;display:flex;align-items:center;gap:18px;">
+          <i class="fa-solid fa-shield-halved" style="font-size:26px;color:#16A34A;"></i>
+          <p contenteditable="true" style="font-size:18px;color:#1E293B;margin:0;">
+            <b>Ketahanan Terhadap Gangguan:</b> Jalur alternatif mencegah putusnya komunikasi total saat terjadi kerusakan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 7: Kesimpulan dan Tantangan Quiz -->
+  <div class="slide-container" id="slide7" style="width:1280px;height:720px;margin:0;padding:48px 64px;box-sizing:border-box;overflow:hidden;background:#0F172A;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+    <p contenteditable="true" style="font-size:16px;font-weight:700;color:#38BDF8;letter-spacing:0.06em;margin:0 0 12px 0;">
+      KESIMPULAN & EVALUASI PEMAHAMAN
+    </p>
+    <h2 contenteditable="true" style="font-size:40px;font-weight:800;color:#F8FAFC;margin:0 0 16px 0;max-width:880px;line-height:1.2;">
+      Tree Mengatur Hierarki, Graph Menghubungkan Banyak Jalur
+    </h2>
+    <p contenteditable="true" style="font-size:20px;color:#CBD5E1;margin:0 0 36px 0;max-width:820px;">
+      Pertanyaan Evaluasi: Struktur jaringan manakah yang memiliki satu titik akar utama dan tidak memiliki jalur memutar?
+    </p>
+    <div style="display:flex;gap:28px;align-items:center;width:100%;max-width:920px;">
+      <div style="flex:1 1 0;background:#1E293B;border-radius:20px;padding:28px;display:flex;flex-direction:column;align-items:center;gap:12px;">
+        <i class="fa-solid fa-tree" style="font-size:40px;color:#38BDF8;"></i>
+        <h3 contenteditable="true" style="font-size:22px;font-weight:700;color:#F8FAFC;margin:0;">A. Struktur Tree</h3>
+        <p contenteditable="true" style="font-size:18px;color:#94A3B8;margin:0;">Memiliki satu akar pusat dengan jalur tunggal ke setiap cabang.</p>
+      </div>
+      <div style="flex:1 1 0;background:#1E293B;border-radius:20px;padding:28px;display:flex;flex-direction:column;align-items:center;gap:12px;">
+        <i class="fa-solid fa-circle-nodes" style="font-size:40px;color:#F97316;"></i>
+        <h3 contenteditable="true" style="font-size:22px;font-weight:700;color:#F8FAFC;margin:0;">B. Struktur Graph</h3>
+        <p contenteditable="true" style="font-size:18px;color:#94A3B8;margin:0;">Menghubungkan titik secara bebas dengan banyak jalur alternatif.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
